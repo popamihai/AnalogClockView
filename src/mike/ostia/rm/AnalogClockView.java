@@ -81,10 +81,10 @@ public class AnalogClockView extends View {
 			for (int i = 0; i < hourCoordinates.length; i++) {
 				if (i == 0) {
 					if (am) {
-						canvas.drawText("0", hourCoordinates[i].x,
+						canvas.drawText(i + 12 + "", hourCoordinates[i].x,
 								hourCoordinates[i].y, hourPaint);
 					} else {
-						canvas.drawText(i + 12 + "", hourCoordinates[i].x,
+						canvas.drawText("0", hourCoordinates[i].x,
 								hourCoordinates[i].y, hourPaint);
 					}
 
