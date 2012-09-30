@@ -12,7 +12,7 @@ In order to use the view, all you have to do is to:
    - implement the OnTimeChangedListener interface in your activity
    - override the onTimeChange() callback in order to get the hour/minute values from the clock
 
-
+Please feel free to improve the code as you like. 
 
 Copyright 2012 Mihail Popa
 
