@@ -34,7 +34,7 @@ public class AnalogClockView extends View {
 
 	private boolean am = true;
 	private boolean initialSetup = true;
-	private boolean hourSelection = false;
+	private boolean hourSelection = true;
 
 	/**
 	 * Interface used to send selected hour, minute data to other classes
@@ -333,12 +333,17 @@ public class AnalogClockView extends View {
 			}
 			if (listener != null) {
 				if (am) {
-					listener.onTimeChanged(this, selectedHour,
-							selectedMinute * 5);
+					if (selectedHour == 0) {
+						listener.onTimeChanged(this, selectedHour + 12,
+								selectedMinute * 5);
+					} else {
+						listener.onTimeChanged(this, selectedHour,
+								selectedMinute * 5);
+					}
+
 				} else {
 					if (selectedHour == 0) {
-						listener.onTimeChanged(this, selectedHour + 24,
-								selectedMinute * 5);
+						listener.onTimeChanged(this, 0, selectedMinute * 5);
 					} else {
 						listener.onTimeChanged(this, selectedHour + 12,
 								selectedMinute * 5);
