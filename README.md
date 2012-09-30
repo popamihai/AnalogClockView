@@ -14,6 +14,9 @@ In order to use the view, all you have to do is to:
 
 Please feel free to improve the code as you like. 
 
+Demo: 
+http://www.youtube.com/watch?v=CHwafI9mPWc&feature=youtu.be
+
 Copyright 2012 Mihail Popa
 
    Licensed under the Apache License, Version 2.0 (the "License");
