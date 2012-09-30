@@ -8,7 +8,7 @@ The view lets you interact with an analog clock
 
 In order to use the view, all you have to do is to:
 
-   - add an "AnalogClockView" view to your activity layout
+   - add an "AnalogClockView" object to your activity layout
    - implement the OnTimeChangedListener interface in your activity
    - override the onTimeChange() callback in order to get the hour/minute values from the clock
 
